@@ -1,0 +1,10 @@
+14:36:25 **** Build of configuration Debug for project SWITCH LED BUZZER ****
+make -j8 all 
+arm-none-eabi-size   SWITCH\ LED\ BUZZER.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6220	     20	   1572	   7812	   1e84	SWITCH LED BUZZER.elf
+Finished building: default.size.stdout
+ 
+
+14:36:25 Build Finished. 0 errors, 0 warnings. (took 498ms)
+

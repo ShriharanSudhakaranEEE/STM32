@@ -1,0 +1,10 @@
+09:31:33 **** Incremental Build of configuration Debug for project ASSESSMENT 2 ****
+make -j8 all 
+arm-none-eabi-size   ASSESSMENT\ 2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6016	     20	   1572	   7608	   1db8	ASSESSMENT 2.elf
+Finished building: default.size.stdout
+ 
+
+09:31:33 Build Finished. 0 errors, 0 warnings. (took 313ms)
+

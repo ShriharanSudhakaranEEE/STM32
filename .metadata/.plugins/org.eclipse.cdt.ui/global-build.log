@@ -1,0 +1,134 @@
+09:17:28 **** Incremental Build of configuration Debug for project MAIN PROJECT ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/LCD.h: In function 'LCDinit':
+../Core/Inc/LCD.h:5:2: warning: implicit declaration of function 'cmd' [-Wimplicit-function-declaration]
+    5 |  cmd(0x01);
+      |  ^~~
+../Core/Inc/LCD.h: At top level:
+../Core/Inc/LCD.h:9:6: warning: conflicting types for 'cmd'
+    9 | void cmd(unsigned char y)
+      |      ^~~
+../Core/Inc/LCD.h:5:2: note: previous implicit declaration of 'cmd' was here
+    5 |  cmd(0x01);
+      |  ^~~
+../Core/Inc/LCD.h: In function 'input':
+../Core/Inc/LCD.h:30:3: warning: implicit declaration of function 'Data' [-Wimplicit-function-declaration]
+   30 |   Data(*x++);
+      |   ^~~~
+../Core/Inc/LCD.h: At top level:
+../Core/Inc/LCD.h:34:6: warning: conflicting types for 'Data'
+   34 | void Data(unsigned char z)
+      |      ^~~~
+../Core/Inc/LCD.h:30:3: note: previous implicit declaration of 'Data' was here
+   30 |   Data(*x++);
+      |   ^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:112:9: warning: pointer targets in passing argument 1 of 'input' differ in signedness [-Wpointer-sign]
+  112 |   input("WELCOME");
+      |         ^~~~~~~~~
+      |         |
+      |         char *
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/LCD.h:26:27: note: expected 'unsigned char *' but argument is of type 'char *'
+   26 | void input(unsigned char *x)
+      |            ~~~~~~~~~~~~~~~^
+../Core/Src/main.c:117:9: warning: pointer targets in passing argument 1 of 'input' differ in signedness [-Wpointer-sign]
+  117 |   input("SEATBELT UNLOCK");
+      |         ^~~~~~~~~~~~~~~~~
+      |         |
+      |         char *
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/LCD.h:26:27: note: expected 'unsigned char *' but argument is of type 'char *'
+   26 | void input(unsigned char *x)
+      |            ~~~~~~~~~~~~~~~^
+../Core/Src/main.c:132:17: warning: pointer targets in passing argument 1 of 'input' differ in signedness [-Wpointer-sign]
+  132 |           input("SEATBELT LOCK");
+      |                 ^~~~~~~~~~~~~~~
+      |                 |
+      |                 char *
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/LCD.h:26:27: note: expected 'unsigned char *' but argument is of type 'char *'
+   26 | void input(unsigned char *x)
+      |            ~~~~~~~~~~~~~~~^
+../Core/Src/main.c:154:30: warning: pointer targets in passing argument 1 of 'input' differ in signedness [-Wpointer-sign]
+  154 |                        input("ENGG TEMP:");
+      |                              ^~~~~~~~~~~~
+      |                              |
+      |                              char *
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/LCD.h:26:27: note: expected 'unsigned char *' but argument is of type 'char *'
+   26 | void input(unsigned char *x)
+      |            ~~~~~~~~~~~~~~~^
+../Core/Src/main.c:156:28: warning: pointer targets in passing argument 1 of 'input' differ in signedness [-Wpointer-sign]
+  156 |                      input("C");
+      |                            ^~~
+      |                            |
+      |                            char *
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/LCD.h:26:27: note: expected 'unsigned char *' but argument is of type 'char *'
+   26 | void input(unsigned char *x)
+      |            ~~~~~~~~~~~~~~~^
+../Core/Src/main.c:160:27: warning: pointer targets in passing argument 1 of 'input' differ in signedness [-Wpointer-sign]
+  160 |                     input("OVER TEMPERATURE");
+      |                           ^~~~~~~~~~~~~~~~~~
+      |                           |
+      |                           char *
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/LCD.h:26:27: note: expected 'unsigned char *' but argument is of type 'char *'
+   26 | void input(unsigned char *x)
+      |            ~~~~~~~~~~~~~~~^
+../Core/Src/main.c:165:35: warning: pointer targets in passing argument 1 of 'input' differ in signedness [-Wpointer-sign]
+  165 |                             input("NORMAL TEMP");
+      |                                   ^~~~~~~~~~~~~
+      |                                   |
+      |                                   char *
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/LCD.h:26:27: note: expected 'unsigned char *' but argument is of type 'char *'
+   26 | void input(unsigned char *x)
+      |            ~~~~~~~~~~~~~~~^
+../Core/Src/main.c:215:15: warning: pointer targets in passing argument 1 of 'input' differ in signedness [-Wpointer-sign]
+  215 |         input("ENGINE OFF!!");
+      |               ^~~~~~~~~~~~~~
+      |               |
+      |               char *
+In file included from ../Core/Src/main.c:24:
+../Core/Inc/LCD.h:26:27: note: expected 'unsigned char *' but argument is of type 'char *'
+   26 | void input(unsigned char *x)
+      |            ~~~~~~~~~~~~~~~^
+../Core/Src/main.c:108:7: warning: unused variable 'state' [-Wunused-variable]
+  108 |   int state=0;
+      |       ^~~~~
+arm-none-eabi-gcc -o "MAIN PROJECT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\workspace_1.9.0\MAIN PROJECT\STM32F405RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MAIN PROJECT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MAIN PROJECT.elf
+ 
+arm-none-eabi-size   MAIN\ PROJECT.elf 
+arm-none-eabi-objdump -h -S  MAIN\ PROJECT.elf  > "MAIN PROJECT.list"
+   text	   data	    bss	    dec	    hex	filename
+  23432	    128	   2848	  26408	   6728	MAIN PROJECT.elf
+Finished building: default.size.stdout
+ 
+Finished building: MAIN PROJECT.list
+ 
+09:17:45 **** Incremental Build of configuration Debug for project MAIN PROJECT ****
+make -j8 all 
+arm-none-eabi-size   MAIN\ PROJECT.elf 
+   text	   data	    bss	    dec	    hex	filename
+  23432	    128	   2848	  26408	   6728	MAIN PROJECT.elf
+Finished building: default.size.stdout
+ 
+09:18:04 **** Incremental Build of configuration Debug for project MAIN PROJECT ****
+make -j8 all 
+arm-none-eabi-size   MAIN\ PROJECT.elf 
+   text	   data	    bss	    dec	    hex	filename
+  23432	    128	   2848	  26408	   6728	MAIN PROJECT.elf
+Finished building: default.size.stdout
+ 
+13:59:34 **** Build of configuration Debug for project LCD DISPLAY ****
+make -j8 all 
+arm-none-eabi-size   LCD\ DISPLAY.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6488	     20	   1572	   8080	   1f90	LCD DISPLAY.elf
+Finished building: default.size.stdout
+ 

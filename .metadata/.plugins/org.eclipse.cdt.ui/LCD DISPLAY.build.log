@@ -1,0 +1,10 @@
+13:59:34 **** Build of configuration Debug for project LCD DISPLAY ****
+make -j8 all 
+arm-none-eabi-size   LCD\ DISPLAY.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6488	     20	   1572	   8080	   1f90	LCD DISPLAY.elf
+Finished building: default.size.stdout
+ 
+
+13:59:35 Build Finished. 0 errors, 0 warnings. (took 625ms)
+

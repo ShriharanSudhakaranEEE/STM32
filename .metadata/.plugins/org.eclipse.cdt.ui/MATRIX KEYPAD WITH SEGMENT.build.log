@@ -1,0 +1,10 @@
+12:12:21 **** Build of configuration Debug for project MATRIX KEYPAD WITH SEGMENT ****
+make all 
+arm-none-eabi-size   MATRIX\ KEYPAD\ WITH\ SEGMENT.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6232	     20	   1572	   7824	   1e90	MATRIX KEYPAD WITH SEGMENT.elf
+Finished building: default.size.stdout
+ 
+
+12:12:21 Build Finished. 0 errors, 0 warnings. (took 330ms)
+

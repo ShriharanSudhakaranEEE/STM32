@@ -1,0 +1,13 @@
+09:41:41 **** Incremental Build of configuration Debug for project ADC(POT) ****
+make -j8 all 
+arm-none-eabi-size   ADC(POT).elf 
+arm-none-eabi-objdump -h -S  ADC(POT).elf  > "ADC(POT).list"
+c:/st/stm32cubeide_1.9.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.make.win32_2.0.100.202202231230/tools/bin/sh: syntax error: unexpected "("
+make: *** [makefile:69: default.size.stdout] Error 2
+make: *** Waiting for unfinished jobs....
+c:/st/stm32cubeide_1.9.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.make.win32_2.0.100.202202231230/tools/bin/sh: syntax error: unexpected "("
+make: *** [makefile:74: ADC(POT).list] Error 2
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+09:41:41 Build Failed. 3 errors, 0 warnings. (took 329ms)
+

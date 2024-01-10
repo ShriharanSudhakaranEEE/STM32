@@ -1,0 +1,10 @@
+10:11:01 **** Incremental Build of configuration Debug for project SWITCH WITH COUNT ****
+make -j8 all 
+arm-none-eabi-size   SWITCH\ WITH\ COUNT.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5964	     20	   1572	   7556	   1d84	SWITCH WITH COUNT.elf
+Finished building: default.size.stdout
+ 
+
+10:11:02 Build Finished. 0 errors, 0 warnings. (took 344ms)
+

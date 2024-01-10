@@ -1,0 +1,10 @@
+20:07:37 **** Build of configuration Debug for project IR SENSOR ****
+make -j8 all 
+arm-none-eabi-size   IR\ SENSOR.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6792	     20	   1572	   8384	   20c0	IR SENSOR.elf
+Finished building: default.size.stdout
+ 
+
+20:07:37 Build Finished. 0 errors, 0 warnings. (took 718ms)
+
